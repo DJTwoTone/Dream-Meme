@@ -1,0 +1,121 @@
+ body {
+   background: rgb(135, 206, 235);
+   font-family: 'Righteous', cursive;
+ }
+
+ header {
+   color: rgb(41, 91, 110);
+   margin-bottom: 50px
+ }
+
+ header h1 {
+   text-align: center;
+ }
+
+ #memeinput {
+
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   background: rgba(181, 192, 196, 0.8);
+   box-shadow: 0 0 70px 70px rgba(181, 192, 196, .8);
+
+
+
+ }
+
+ .inputs {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   font-family: 'Righteous', cursive;
+
+
+
+ }
+
+ #memebackground,
+ #toptext,
+ #bottomtext {
+   width: 300px;
+   text-align: center;
+   margin-bottom: 5px;
+   border-radius: 10px;
+   background: rgb(84, 84, 84);
+   font-family: 'Righteous', cursive;
+
+ }
+
+ ::placeholder {
+   color: rgb(200, 190, 180);
+   font-family: 'Righteous', cursive;
+ }
+#submitdiv {
+    display: flex;
+    justify-content: center;
+    
+}
+
+ input[type='submit'] {
+   width: 100px;
+   height: 100px;
+   background: rgb(84, 84, 84);
+   border: 0;
+   border-radius: 50px;
+   box-shadow: 0 0 40px 40px rgb(72, 83, 87);
+   font-family: 'Righteous', cursive;
+   color: rgb(200, 190, 180);
+
+ }
+
+ main {
+   display: flex;
+   grid-gap: 15px;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+ }
+
+ .memediv {
+   height: 300px;
+   width: 300px;
+   position: relative;
+   margin: 20px;
+   text-align: center;
+   box-shadow: 0 0 20px 20px white;
+ }
+
+ .memeimg {
+   height: 100%;
+   width: 100%;
+ }
+
+ .memetexttop {
+   position: absolute;
+   top: 10px;
+   width: 100%;
+   margin-top: 0;
+ }
+
+ .memetextbottom {
+   position: absolute;
+   bottom: -10px;
+   width: 100%;
+ }
+
+ .delete {
+   position: absolute;
+   visibility: hidden;
+   font-size: 10rem;
+   margin: 0;
+   color: red;
+   height: 100%;
+   width: 100%;
+   top: 0px;
+   background: rgba(255, 0, 0, 0.35);
+   cursor: pointer;
+ }
+
+ .memediv:hover .delete {
+   visibility: visible;
+ }
